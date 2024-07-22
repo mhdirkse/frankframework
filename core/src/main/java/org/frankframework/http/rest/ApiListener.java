@@ -52,6 +52,10 @@ import org.springframework.util.MimeType;
  * for all ApiListeners in all configurations combined. You can
  * find them in the Frank!Console under main menu item Webservices, heading Available ApiListeners.
  * <p>
+ * NOTE: There is a caveat when you want to test your ApiListener using curl. By default, curl adds
+ * header <code>Content-Type: application/x-www-form-urlencoded</code>. To omit it, add the following
+ * option to your curl command: <code>-H 'Content-Type:'</code>.
+ * <p>
  * The generated OpenAPI specifications have <code>servers</code> and <code>paths</code> objects and
  * therefore they document the full URLs of the provided services.
  * <p>
