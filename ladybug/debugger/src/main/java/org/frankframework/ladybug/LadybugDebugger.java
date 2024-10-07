@@ -64,7 +64,7 @@ public class LadybugDebugger implements Debugger, ApplicationListener<DebuggerSt
 
 	private TestTool testtool;
 	protected @Setter @Getter IbisManager ibisManager;
-	private @Setter @Resource List<String> testerRoles;
+	private @Setter @Resource(name="testerRoles") List<String> testerRoles;
 	private @Setter ApplicationContext applicationContext;
 
 	protected Set<String> inRerun = new HashSet<>();
