@@ -19,10 +19,12 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
+
+import jakarta.annotation.Resource;
+
 import nl.nn.testtool.Checkpoint;
 import nl.nn.testtool.Debugger;
 import nl.nn.testtool.Report;
@@ -31,7 +33,6 @@ import nl.nn.testtool.TestTool;
 import nl.nn.testtool.run.ReportRunner;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.Resource;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationListener;
