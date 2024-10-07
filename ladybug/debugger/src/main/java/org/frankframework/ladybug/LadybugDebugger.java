@@ -31,7 +31,7 @@ import nl.nn.testtool.TestTool;
 import nl.nn.testtool.run.ReportRunner;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.Resource;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationListener;
@@ -63,7 +63,7 @@ public class LadybugDebugger implements Debugger, ApplicationListener<DebuggerSt
 
 	private TestTool testtool;
 	protected @Setter @Getter IbisManager ibisManager;
-	private @Setter @Autowired List<String> testerRoles;
+	private @Setter @Resource List<String> testerRoles;
 	private @Setter ApplicationContext applicationContext;
 
 	protected Set<String> inRerun = new HashSet<>();
