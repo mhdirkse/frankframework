@@ -143,7 +143,7 @@ export class MonacoEditorComponent implements AfterViewInit, OnChanges, OnDestro
       value: this.value,
       theme: 'vs-light',
       language: 'xml',
-      automaticLayout: true,
+      automaticLayout: false,
       scrollBeyondLastLine: false,
       wordWrap: 'on',
       minimap: { enabled: false },
